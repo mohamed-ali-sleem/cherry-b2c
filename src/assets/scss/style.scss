@@ -24,67 +24,16 @@
 @import './mixins/width';
 
 // Core styles
-@import './background';
 @import './reset';
-@import './functions'; 
-@import './footer';
-@import './misc';
 @import './utilities';
-@import './demo';
 @import './typography';
 @import './spinner';
 
-@import './horizontal-wrapper';
-@import './navbar';
-
 // components
-@import "./components/accordions";
-@import "./components/badges";
-@import "./components/bootstrap-alert";
-@import "./components/breadcrumbs";
-@import "./components/buttons";
-@import "./components/cards";
-@import "./components/carousel";
-@import "./components/checkbox-radio";
-@import "./components/dashboard";
-@import "./components/datepicker";
-@import "./components/dropdown";
-@import "./components/forms";
-@import "./components/icons";
-@import "./components/input-group";
-@import "./components/list-group";
-@import "./components/modal";
-@import "./components/nav";
-@import "./components/pagination";
-@import "./components/popover";
-@import "./components/profile";
-@import "./components/rating";
-@import "./components/tables";
-@import "./components/timeline";
-@import "./components/chat";
-@import "./components/faq";
-@import "./components/auth";
 
-// Email
-@import "./components/email/inbox";
-@import "./components/email/email-read";
-@import "./components/email/email-compose";
 
 // Plugin styles
-@import '~perfect-scrollbar/css/perfect-scrollbar.css';
  
 // Plugin overrides
-@import "./components/plugin-overrides/full-calendar";
-@import "./components/plugin-overrides/ng-select";
-@import "./components/plugin-overrides/ngx-chips";
-@import "./components/plugin-overrides/ngx-quill";
-@import "./components/plugin-overrides/perfect-scrollbar";
-@import "./components/plugin-overrides/simplemde";
-@import "./components/plugin-overrides/sweet-alert";
-@import "./components/plugin-overrides/dropzone";
-@import "./components/plugin-overrides/angular-archwizard";
-@import "./components/plugin-overrides/apex-charts";
-@import "./components/plugin-overrides/data-tables";
-@import "./components/plugin-overrides/ngx-datatable";
 
-@import "_custom.scss"
+
