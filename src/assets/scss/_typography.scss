@@ -1,7 +1,21 @@
 /* Typography */
+/*@font-face{font-family:Neotech;font-weight:300;src:url(../fonts/neotech-light.woff) format("woff");font-display:swap}*/
+@font-face {
+  font-family: Neotech;
+  font-weight: 400;
+  src: url(../fonts/neotech-regular.woff) format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: GE SS Two;
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/ge_ss_two_light.ttf);
+}
 
 body {
-  font-family: $type1;
+  font-family: $type2;
   font-size: $default-font-size;
   font-weight: $default-font-weight;
   line-height: $default-line-height;
@@ -20,12 +34,13 @@ h6,
 .h5,
 .h6 {
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.33;
   margin-bottom: 0;
+  font-family: Neotech;
 }
 p {
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.33;
 }
 h1,
 .h1 {
@@ -49,7 +64,7 @@ h5,
 }
 h6,
 .h6 {
-  font-size: .9375rem;
+  font-size: 0.9375rem;
 }
 .display-1 {
   font-size: 3.75rem;
@@ -108,4 +123,15 @@ address {
 
 .font-weight-medium {
   font-weight: 600;
+}
+
+// letter spacing  classes
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+.letter-spacing-2 {
+  letter-spacing: 2px;
+}
+.letter-spacing-3 {
+  letter-spacing: 3px;
 }

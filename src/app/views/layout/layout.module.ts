@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { BaseComponent } from './base/base.component';
-// import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { ContentAnimateDirective } from '../../core/content-animate/content-animate.directive';
@@ -18,7 +18,7 @@ import { ContentAnimateDirective } from '../../core/content-animate/content-anim
 
 
 @NgModule({
-  declarations: [BaseComponent, FooterComponent, ContentAnimateDirective],
+  declarations: [BaseComponent, FooterComponent, ContentAnimateDirective, NavbarComponent],
   imports: [
     CommonModule,
     RouterModule,

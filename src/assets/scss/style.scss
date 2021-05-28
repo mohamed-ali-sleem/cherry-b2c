@@ -25,15 +25,18 @@
 
 // Core styles
 @import './reset';
+@import './base';
 @import './utilities';
 @import './typography';
 @import './spinner';
 
-// components
-
-
 // Plugin styles
- 
+@import '~swiper/swiper-bundle';
+
+// components
+@import './components/button';
+@import './components/carousel';
+
 // Plugin overrides
 
 

@@ -1,0 +1,119 @@
+.main-btn {
+  color: #fff;
+  background: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ec3323;
+  position: relative;
+  display: inline-block;
+  padding: 8px 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0 6px;
+}
+
+.main-btn:hover:before,
+.main-btn:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #ec3323;
+}
+
+.main-btn:hover {
+  color: #fff;
+  background-color: #ec3323;
+  border-color: #ec3323;
+}
+
+.main-btn:before,
+.main-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-color: #ec3323;
+  box-sizing: border-box;
+  border-style: solid;
+  width: 1em;
+  height: 1em;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-btn:before {
+  top: -6px;
+  left: -6px;
+  border-width: 2px 0 0 2px;
+  z-index: 5;
+}
+
+.main-btn:after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 2px 2px 0;
+}
+
+.main-btn:hover:before,
+.main-btn:hover:after {
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border-color: #ec3323;
+}
+
+.main-btn:hover {
+  color: #fff;
+  background-color: #ec3323;
+  border-color: #ec3323;
+}
+
+/*================================================
+06 - BTN TOP CSS
+==================================================*/
+
+.btntoTop:before {
+  color: #fff;
+  content: "";
+  display: inline-block;
+  font: 20px "FontAwesome";
+  vertical-align: middle;
+}
+
+.btntoTop {
+  background-color: #ec3323;
+  border: 2px solid #ec3323;
+  border-radius: 5px;
+  bottom: 70px;
+  cursor: pointer;
+  height: 50px;
+  line-height: 47px;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  position: fixed;
+  right: 20px;
+  text-align: center;
+  -webkit-transition: opacity 0.4s ease 0s;
+  transition: opacity 0.4s ease 0s;
+  width: 50px;
+  z-index: 99999;
+}
+
+.btntoTop.active {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+.btntoTop.active:hover {
+  background: #212121 none repeat scroll 0 0;
+  border: 2px solid #cb2415;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+
+.btntoTop.active.btntoTop:hover:before {
+  color: #fff;
+}
