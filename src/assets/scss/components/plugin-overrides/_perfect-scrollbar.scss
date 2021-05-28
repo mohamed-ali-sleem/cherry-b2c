@@ -4,19 +4,16 @@
 		background-color: rgba(72, 83, 114, 0.06);
 		z-index: 10;
 		position: absolute;
-		left: auto;
-		right: 0;
+		left: 0 !important;
+		right: auto;
 		opacity: 0;
 		margin: 1px;
-		.rtl & {
-			right: auto ;
-			left: 0;
-		}
 		> .ps__thumb-y {
 			position: absolute;
 			border-radius: 0;
 			width: 3px;
 			left: 0;
+			right: 0;
 			background-color: #dee1e7;
 		}
 	}

@@ -224,6 +224,7 @@
           .navbar-nav {
             margin-left: 0;
             margin-right: auto;
+            padding-inline-start: 0;
             .nav-item {
               &.dropdown {
                 .dropdown-menu {
@@ -304,5 +305,9 @@
         }
       }
     }
+  }
+
+  .progress {
+    direction: rtl;
   }
 }

@@ -33,7 +33,16 @@ ngb-alert {
       i {
         margin-right: 0;
         margin-left: 1.25rem;
+        display: inline-block;
       }
+    }
+  }
+  .alert-dismissible {
+    padding-right: inherit;
+    padding-left: $close-font-size + $alert-padding-x * 2;
+    .close {
+      right: auto;
+      left: 0;
     }
   }
 }

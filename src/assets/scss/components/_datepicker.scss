@@ -1,5 +1,9 @@
 ngb-datepicker {
   @extend .border;
+  @media(max-width: 767px) {
+    max-width: -webkit-fill-available;
+    overflow: scroll;
+  }
   .ngb-dp-header {
     background-color: darken($card-bg, 3%);
     padding: .5rem 0;

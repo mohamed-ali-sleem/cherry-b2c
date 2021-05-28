@@ -50,10 +50,10 @@
             color: $body-color;
           }
         }
-        &:last-child {
-          .nav-link {
-            border-right: 0;
-          }
+      }
+      &:last-child {
+        .nav-link {
+          border-right: 0;
         }
       }
     }

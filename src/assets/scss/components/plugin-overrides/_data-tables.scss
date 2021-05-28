@@ -7,6 +7,10 @@
         white-space: nowrap;
         select {
           margin-right: 10px;
+          .rtl & {
+            margin-right: 0;
+            margin-left: 10px;
+          }
         }
       }
     }
@@ -35,8 +39,31 @@
   }
   .dataTable-bottom {
     .dataTable-pagination {
+      .rtl & {
+        display: flex;
+      }
       li {
         @extend .page-item;
+        .rtl & {
+          &.pager {
+            &:first-child {
+              a {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: $border-radius;
+                border-bottom-right-radius: $border-radius;
+              }
+            }
+            &:last-child {
+              a {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+              }
+            }
+          }
+        }
         a {
           @extend .page-link;
           color: theme-color(primary);
