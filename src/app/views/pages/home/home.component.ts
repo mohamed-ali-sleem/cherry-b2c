@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
+
 // import Swiper core and required modules
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y,} from 'swiper/core';// install Swiper modules
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+import SwiperCore, { Navigation, A11y, EffectFade } from 'swiper/core'; // install Swiper modules
+SwiperCore.use([Navigation, A11y, EffectFade]);
+import { MapInfoWindow, MapMarker, GoogleMap } from '@angular/google-maps'
 
 @Component({
   selector: 'app-home',
@@ -10,118 +13,38 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
   preserveWhitespaces: true,
 })
 export class HomeComponent implements OnInit {
-  // homeSliderOptions: OwlOptions = {
-  //   animateOut: 'fadeOutLeft',
-  //   animateIn: 'fadeIn',
-  //   items: 2,
-  //   nav: true,
-  //   dots: false,
-  //   autoplayTimeout: 9000,
-  //   autoplaySpeed: 5000,
-  //   autoplay: true,
-  //   loop: true,
-  //   navText: [
-  //     "<img src='assets/img/slider/prev-1.png'>",
-  //     "<img src='assets/img/slider/next-1.png'>",
-  //   ],
-  //   mouseDrag: true,
-  //   touchDrag: true,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     480: {
-  //       items: 1,
-  //     },
-  //     600: {
-  //       items: 1,
-  //     },
-  //     750: {
-  //       items: 1,
-  //     },
-  //     1000: {
-  //       items: 1,
-  //     },
-  //     1200: {
-  //       items: 1,
-  //     },
-  //   },
-  // };
 
-  slidesStore = [
-    {
-      id: '1',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_1',
-      title: 'Image_1',
-    },
-    {
-      id: '2',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_2',
-      title: 'Image_3',
-    },
-    {
-      id: '3',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_3',
-      title: 'Image_3',
-    },
-    {
-      id: '4',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_4',
-      title: 'Image_4',
-    },
-    {
-      id: '5',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_5',
-      title: 'Image_5',
-    },
-    {
-      id: '6',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_6',
-      title: 'Image_6',
-    },
-    {
-      id: '7',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_7',
-      title: 'Image_7',
-    },
-    {
-      id: '8',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_8',
-      title: 'Image_8',
-    },
-    {
-      id: '9',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_9',
-      title: 'Image_9',
-    },
-    {
-      id: '10',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_10',
-      title: 'Image_10',
-    },
-    {
-      id: '11',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_11',
-      title: 'Image_11',
-    },
-    {
-      id: '12',
-      src: 'http://via.placeholder.com/265x167',
-      alt: 'Image_12',
-      title: 'Image_12',
-    },
-  ];
+  lat = 51.678418;
+  lng = 7.809007;
+  zoom = 12; 
+  center: google.maps.LatLngLiteral;
+  options: google.maps.MapOptions = {
+    mapTypeId: 'hybrid',
+    zoomControl: false,
+    scrollwheel: false,
+    disableDoubleClickZoom: true,
+    maxZoom: 15,
+    minZoom: 8,
+    zoom: 5,
+    center: new google.maps.LatLng(39.639537564366684, -101.77734375),
+    mapTypeControl: false,
+    scaleControl: false,
+    panControl: false,
+    streetViewControl: false,
+    styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
+  }
+
+  imageUrl = "images/car-marker.png";
+
+  ngOnInit(): void {
+    navigator.geolocation.getCurrentPosition((position) => {
+      this.center = {
+        lat: position.coords.latitude,
+        lng: position.coords.longitude,
+      }
+    })
+   // AOS.init()
+  }
 
   onSwiper(swiper: any) {
     console.log(swiper);
@@ -130,5 +53,4 @@ export class HomeComponent implements OnInit {
     console.log('slide change');
   }
 
-  ngOnInit(): void {}
 }

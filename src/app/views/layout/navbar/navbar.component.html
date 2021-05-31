@@ -1,1 +1,102 @@
-<p>navbar works!</p>
+<div id="responsive-menu-div" class="responsive-menu">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+      <div class="action-icons">
+        <a href="#">
+          <img src="/assets/img/ico-lang-ar.png" />
+        </a>
+        <a href="#">
+          <img src="/assets/img/ico-accessabilty-view.png" />
+        </a>
+        <a href="#">
+          <img src="/assets/img/ico-accessabilty-size.png" />
+        </a>
+        <a href="#">
+          <img src="/assets/img/ico-accessabilty-speak.png" />
+        </a>
+        <div (click)="toggleMenu()" class="close-btn-holder">
+          <img src="/assets/img/ico-close.png" />
+        </div>
+      </div>
+    </div>
+    <div class="mob-sep"></div>
+    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+      <a href="#" class="user-link" selected>Bussiness</a>
+      <a href="#" class="user-link">User</a>
+    </div>
+    <div class="mob-sep"></div>
+    <div class="profile-data">
+      <div class="per15 profile-img-icon">
+        <img class="user-image" src="/assets/img/user-empty.png" />
+      </div>
+      <div class="profile-info">
+        <div class="welcome-message">Welcome</div>
+        <div class="user-name">User Name</div>
+      </div>
+    </div>
+    <div class="mob-sep"></div>
+    <div class="main-links">
+      <a href="#" class="main-link">home</a
+      ><a href="#" class="main-link">about cherry</a>
+      <a href="#" class="main-link">support</a
+      ><a href="#" class="main-link">sign in</a>
+    </div>
+    <div class="mob-sep"></div>
+    <div class="col-sm-12 col-md-12 mob-copyright">
+      copyright cherry 2021, all rights reserved
+    </div>
+  </div>
+</div>
+<div class="top-header">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-6 text-left">
+        <a href="#" class="user-link" selected>Bussiness</a>
+        <a href="#" class="user-link">User</a>
+      </div>
+      <div class="col-6 text-right">
+        <a href="#" class="user-link">العربية</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="main-header">
+  <div class="container-lg">
+    <div class="row">
+      <div class="col-md-10 text-left">
+        <div class="logo">
+          <a href="#"><img src="/assets/img/logo.png" /></a>
+        </div>
+        <div class="main-links">
+          <a href="#" class="main-link">home</a
+          ><a href="#" class="main-link">about cherry</a>
+          <a href="#" class="main-link">support</a
+          ><a href="#" class="main-link">sign in</a>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="profile-nav">
+          <div class="profile-data">
+            <div class="profile-img-icon">
+              <div class="profile-notification-count">3</div>
+              <img class="user-image" src="/assets/img/user-empty.png" />
+            </div>
+            <div class="profile-link">Log in</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="actions-menu">
+  <div class="mob-visible">
+    <div class="logo">
+      <a href="#"><img src="/assets/img/logo-white.png" /></a>
+    </div>
+    <div class="menu-btn">
+      <div (click)="toggleMenu()" class="close-btn">
+        <img src="/assets/img/ico-close.png" />
+      </div>
+    </div>
+  </div>
+</div>

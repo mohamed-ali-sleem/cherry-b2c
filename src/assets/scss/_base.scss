@@ -1,5 +1,4 @@
-
-// hero banner configration 
+// hero banner configration
 .bg-overlay {
   position: absolute;
   width: 100%;
@@ -7,8 +6,8 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #000;
-  opacity: 0.3;
+  background-color: #460202;
+  opacity: 0.4;
 }
 div.cover {
   position: absolute;
@@ -16,7 +15,6 @@ div.cover {
   width: 100%;
   height: 100%;
 }
-
 img.cover,
 video.cover {
   position: absolute;
@@ -27,4 +25,33 @@ video.cover {
   margin: auto;
   min-width: 100%;
   min-height: 100%;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+.gray-bg {
+  background-color: $white-smoke;
+}
+.badge-overlay {
+  left: 10px;
+  position: absolute;
+  top: 10px;
+  z-index: 11;
+}
+.badge {
+  border-radius: 0;
+  display: table;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.12em;
+  line-height: 17px;
+  padding: 3px 10px;
+}
+iframe {
+  width: 100%;
 }

@@ -6,6 +6,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 // import { FeahterIconModule } from "src/app/core/feather-icon/feather-icon.module";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SwiperModule } from 'swiper/angular';
+import { GoogleMapsModule } from '@angular/google-maps'
 
 // Ng-ApexCharts
 import { HomeComponent } from './home.component';
@@ -25,7 +26,8 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     FormsModule,
     NgbModule,
-    SwiperModule
+    SwiperModule,
+    GoogleMapsModule
   ],
   providers: [HttpClient],
 })

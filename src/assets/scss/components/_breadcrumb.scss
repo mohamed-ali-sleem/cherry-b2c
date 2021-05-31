@@ -1,0 +1,121 @@
+/* =-=-=-=-=-=-= Breadcrumbs =-=-=-=-=-=-= */
+.page-header-area-2 {
+  padding: 30px 0;
+  text-align: left;
+  position: relative;
+}
+
+.page-header-area-2 .small-breadcrumb {
+  background: transparent;
+}
+
+.page-header-area-2 .small-breadcrumb .breadcrumb-link ul li a {
+  color: #999;
+}
+
+.page-header-area-2 .small-breadcrumb .breadcrumb-link ul li::after {
+  color: #a0a0a0;
+}
+
+.page-header-area-2 .small-breadcrumb .breadcrumb-link ul li a.active {
+  border-bottom: medium none;
+}
+
+.page-header-area-2 h1 {
+  color: #232323;
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.page-header-area-2 .key-features {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.small-breadcrumb {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.small-breadcrumb .breadcrumb-link {
+  overflow: hidden;
+}
+
+.small-breadcrumb .breadcrumb-link ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+.small-breadcrumb .breadcrumb-link ul li:first-child {
+  padding-left: 0;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px 0;
+  position: relative;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a .icon {
+  margin-right: 5px;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a .icon {
+  display: inline-block;
+  width: auto;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a::after {
+  bottom: -8px;
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a:hover::after {
+  bottom: -4px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a:first-child {
+  padding-left: 0;
+}
+
+.small-breadcrumb .breadcrumb-link ul li {
+  position: relative;
+}
+
+.small-breadcrumb .breadcrumb-link ul li::after {
+  color: #fff;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  text-decoration: inherit;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.small-breadcrumb .breadcrumb-link ul li:last-child::after {
+  display: none;
+}
+
+.small-breadcrumb .breadcrumb-link ul li a.active {
+  color: $red;
+}
