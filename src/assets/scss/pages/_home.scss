@@ -1,129 +1,207 @@
-/* =-=-=-=-=-=-= App Download Section 2 =-=-=-=-=-=-= */
+
+/*================================================
+1 - FIND AREA CSS
+==================================================*/
+
+.filters-area {
+  margin-top: -120px;
+}
+.find-box {
+  background: $white; // url(/assets/img/find-box-bg.png) no-repeat scroll 0 0;
+  padding: 30px;
+  position: relative;
+  z-index: 999;
+  box-shadow: 3px 0 29px rgba(0, 0, 0, 0.26);
+}
+.find-text {
+  margin-top: 32px;
+  color: $white;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 40px;
+  position: absolute;
+  color: color(gray-light);
+  font-size: 90px;
+  opacity: 0.075;
+  top: 0;
+}
+
+/*================================================
+2 - App Download Section css
+==================================================*/
+
 .mobile-image-content {
-	margin: -30px auto;
-	max-width: 420px;
-	position: relative;
+  margin: -30px auto;
+  max-width: 420px;
+  position: relative;
 }
 
 .mobile-image-content img {
-	position: absolute;
-	width: 100%;
+  position: absolute;
+  width: 100%;
 }
 
 .app-text-section {
-	padding-bottom: 112px;
-	padding-top: 50px;
-	position: relative;
+  padding-bottom: 112px;
+  padding-top: 50px;
+  position: relative;
 }
 
 .app-text-section h5 {
-	color: #fff;
-	margin-bottom: 5px;
-	opacity: 0.8;
-	text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 5px;
+  opacity: 0.8;
+  text-transform: uppercase;
 }
 
 .app-text-section h3 {
-	color: #fff;
-	font-size: 30px;
-	text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .app-text-section ul {
-	list-style: outside none none;
-	margin: 15px 0 30px;
-	padding: 0;
+  list-style: outside none none;
+  margin: 15px 0 30px;
+  padding: 0;
 }
 
 .app-text-section ul li::before {
-	content: "\f0a4";
-	font-family: "fontawesome";
-	left: 0;
-	position: absolute;
+  content: "\f0a4";
+  font-family: "fontawesome";
+  left: 0;
+  position: absolute;
 }
 
 .app-text-section ul li {
-	color: #fff;
-	font-size: 14px;
-	padding: 3px 0 3px 20px;
+  color: #fff;
+  font-size: 14px;
+  padding: 3px 0 3px 20px;
 }
 
 .app-text-section .app-download-btn {
-	position: relative;
+  position: relative;
 }
 
-.app-download-button, .btn.app-download-button {
-	-moz-user-select: none;
-	background-color: transparent;
-	border: 0 none;
-	border-radius: 0;
-	color: #ffffff;
-	display: block;
-	font-weight: 500;
-	overflow: hidden;
-	padding: 0;
-	position: relative;
-	-webkit-transition: all 0s ease-in-out 0s;
-	-moz-transition: all 0s ease-in-out 0s;
-	-ms-transition: all 0s ease-in-out 0s;
-	-o-transition: all 0s ease-in-out 0s;
-	transition: all 0s ease-in-out 0s;
-	width: 100%;
-	z-index: 1;
+.app-download-button,
+.btn.app-download-button {
+  -moz-user-select: none;
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+  color: #ffffff;
+  display: block;
+  font-weight: 500;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  -webkit-transition: all 0s ease-in-out 0s;
+  -moz-transition: all 0s ease-in-out 0s;
+  -ms-transition: all 0s ease-in-out 0s;
+  -o-transition: all 0s ease-in-out 0s;
+  transition: all 0s ease-in-out 0s;
+  width: 100%;
+  z-index: 1;
 }
 
 .btn.app-download-button i {
-	display: block;
-	font-size: 50px;
-	float: left;
-	padding: 0 20px 0 0;
+  display: block;
+  font-size: 50px;
+  float: left;
+  padding: 0 20px 0 0;
 }
 
 .btn.app-download-button span.app-store-btn span {
-	display: block;
-	overflow: hidden;
-	text-align: left;
-	vertical-align: bottom;
-	o-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-webkit-transition: all 0.3s ease-out;
+  display: block;
+  overflow: hidden;
+  text-align: left;
+  vertical-align: bottom;
+  o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 
 .btn.app-download-button span.app-store-btn span span {
-	display: block;
-	overflow: hidden;
-	width: 100%;
+  display: block;
+  overflow: hidden;
+  width: 100%;
 }
 
 .btn.app-download-button span.app-store-btn span span:first-child {
-	font-size: 14px;
+  font-size: 14px;
 }
 
 .btn.app-download-button span.app-store-btn span span:last-child {
-	font-size: 20px;
-	font-weight: 600;
-	font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 
-
-/* =-=-=-=-=-=-= App Download Section 3 =-=-=-=-=-=-= */
 .app-download-section {
-	background: rgba(0, 0, 0, 0) url("/assets/img/slider/slider-2.jpg") no-repeat fixed center center / cover;
-	overflow: hidden;
-	padding: 0;
-	width: 100%;
-    margin: 60px 0;
+  background: rgba(0, 0, 0, 0) url("/assets/img/slider/slider-2.jpg") no-repeat
+    fixed center center / cover;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
 }
 
 .app-download-section-wrapper {
-    background-color: theme-color(dark);
-    content: "";
-    height: 100%;
-    opacity: 0.8;
-    position: relative;
-    width: 100%;
-    z-index: 3;
-    padding: 120px 0;
-
+  background-color: theme-color(dark);
+  content: "";
+  height: 100%;
+  opacity: 0.8;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  padding: 120px 0;
 }
+
+
+.client-section h3 {
+	color: #323232;
+	font-size: 18px;
+	font-style: italic;
+	margin-bottom: 5px;
+}
+
+.client-section h2 {
+	color: #323232;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+
+
+
+
+/* offer section - start */
+.offer_content .item-title {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.offer-info {
+  margin-top: 40px;
+  max-width: 350px;
+}
+.offer-info .item-icon {
+  float: left;
+  width: 30px;
+  line-height: 1;
+  margin-top: 5px;
+  font-size: 24px;
+  margin-right: 15px;
+  color: #EA001E;
+}
+.offer-info .item-content {
+  display: table;
+}
+.offer-info .item-title {
+  line-height: 1;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* offer section - end */

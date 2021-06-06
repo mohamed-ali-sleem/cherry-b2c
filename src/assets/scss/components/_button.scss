@@ -1,5 +1,4 @@
 // btn nostyle
-
 button.no-style {
   background-color: transparent;
   border: none;
@@ -14,46 +13,67 @@ button.no-style {
 }
 
 .main-btn {
-  color: #fff;
-  background: transparent;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #ec3323;
-  position: relative;
+  text-align: center;
+  color: $white;
+  background-color: theme-color(danger-dark);
+  border-radius: 0;
+  padding: 16px 24px;
+  outline: 0;
+  border: 0;
   display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.main-btn.sm { 
+  padding: 10px 16px;
+  font-size: 14px; 
+}
+
+.main-btn:hover {
+  background-color: theme-color(danger);
+  color: $white;
+  outline: 0;
+}
+
+.secondary-btn {
+  color: $white;
+  background: transparent;
+  border: 2px solid theme-color(danger-dark);
+  position: relative;
   padding: 10px 16px;
   transition: all 0.3s ease-in-out;
   text-align: center;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0 6px;
   font-size: 14px;
+  display: inline-block;
 }
 
-.main-btn-theme {
-	color: #ec3323; 
+.secondary-btn-theme {
+  color: theme-color(danger-dark);
 }
 
-.main-btn:hover:before,
-.main-btn:hover:after {
+.secondary-btn:hover:before,
+.secondary-btn:hover:after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-color: #ec3323;
+  border-color: theme-color(danger-dark);
 }
 
-.main-btn:hover {
-  color: #fff;
-  background-color: #ec3323;
-  border-color: #ec3323;
+.secondary-btn:hover {
+  color: $white;
+  background-color: theme-color(danger-dark);
+  border-color: theme-color(danger-dark);
 }
 
-.main-btn:before,
-.main-btn:after {
+.secondary-btn:before,
+.secondary-btn:after {
   content: "";
   display: block;
   position: absolute;
-  border-color: #ec3323;
+  border-color: theme-color(danger-dark);
   box-sizing: border-box;
   border-style: solid;
   width: 1em;
@@ -62,30 +82,30 @@ button.no-style {
   transition: all 0.3s ease-in-out;
 }
 
-.main-btn:before {
+.secondary-btn:before {
   top: -6px;
   left: -6px;
   border-width: 2px 0 0 2px;
   z-index: 5;
 }
 
-.main-btn:after {
+.secondary-btn:after {
   bottom: -6px;
   right: -6px;
   border-width: 0 2px 2px 0;
 }
 
-.main-btn:hover:before,
-.main-btn:hover:after {
+.secondary-btn:hover:before,
+.secondary-btn:hover:after {
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border-color: #ec3323;
+  border-color: theme-color(danger-dark);
 }
 
-.main-btn:hover {
-  color: #fff;
-  background-color: #ec3323;
-  border-color: #ec3323;
+.secondary-btn:hover {
+  color: $white;
+  background-color: theme-color(danger-dark);
+  border-color: theme-color(danger-dark);
 }
 
 /*================================================
@@ -93,7 +113,7 @@ button.no-style {
 ==================================================*/
 
 .btntoTop:before {
-  color: #fff;
+  color: $white;
   content: "";
   display: inline-block;
   font: 20px "FontAwesome";
@@ -101,8 +121,8 @@ button.no-style {
 }
 
 .btntoTop {
-  background-color: #ec3323;
-  border: 2px solid #ec3323;
+  background-color: theme-color(danger-dark);
+  border: 2px solid theme-color(danger-dark);
   border-radius: 5px;
   bottom: 70px;
   cursor: pointer;
@@ -134,5 +154,5 @@ button.no-style {
 }
 
 .btntoTop.active.btntoTop:hover:before {
-  color: #fff;
+  color: $white;
 }

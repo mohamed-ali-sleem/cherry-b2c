@@ -15,11 +15,13 @@
 }
 
 body {
-  font-family: $type2;
+  font-family: $lato;
   font-size: $default-font-size;
   font-weight: $default-font-weight;
   line-height: $default-line-height;
   -webkit-font-smoothing: antialiased;
+  color: theme-color(dark);
+
 }
 h1,
 h2,
@@ -66,41 +68,67 @@ h6,
 .h6 {
   font-size: 0.9375rem;
 }
-.display-1 {
+
+// font sizes
+.fs-9 {
   font-size: 3.75rem;
   @media (max-width: 991px) {
     font-size: 3rem;
   }
 }
-.display-2 {
+.fs-8 {
   font-size: 3.125rem;
   @media (max-width: 991px) {
     font-size: 2.5rem;
   }
 }
-.display-3 {
+.fs-7 {
   font-size: 2.5rem;
   @media (max-width: 991px) {
     font-size: 2rem;
   }
 }
-.display-4 {
+.fs-6 {
   font-size: 1.875rem;
   @media (max-width: 991px) {
     font-size: 1.5rem;
   }
 }
-.display-5 {
+.fs-5 {
   font-size: 1.25rem;
   @media (max-width: 991px) {
     font-size: 1rem;
   }
 }
+.fs-4 {
+  font-size: 1rem;
+  @media (max-width: 991px) {
+    font-size: .875rem;
+  }
+}
+.fs-3 {
+  font-size: .875rem;
+  @media (max-width: 991px) {
+    font-size: .75rem;
+  }
+}
+.fs-2 {
+  font-size: .75rem;
+  @media (max-width: 991px) {
+    font-size: .625rem;
+  }
+}
+.fs-1 {
+  font-size: .625rem;
+  @media (max-width: 991px) {
+    font-size: .5rem;
+  }
+}
+
 
 .blockquote {
   padding: 1.25rem;
 }
-
 address {
   p {
     margin-bottom: 0;
@@ -121,11 +149,18 @@ address {
   }
 }
 
+
+@each $color, $value in $colors {
+  .text-#{$color} {
+    color: color($color);
+  }
+}
+
 .font-weight-medium {
   font-weight: 600;
 }
 
-// letter spacing  classes
+// letter spacing 
 .letter-spacing-1 {
   letter-spacing: 1px;
 }
@@ -135,3 +170,4 @@ address {
 .letter-spacing-3 {
   letter-spacing: 3px;
 }
+

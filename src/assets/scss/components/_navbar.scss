@@ -1,10 +1,14 @@
+.top-header {
+  display: block;
+  background-color: $white-smoke;
+}
+
 .user-link {
-  font-family: lato, ge ss;
   font-weight: 500;
   padding: 0 1rem;
   display: inline-block;
   height: 48px;
-  color: #353738;
+  color: theme-color(dark);
   font-size: 16px;
   line-height: 47px;
   vertical-align: middle;
@@ -12,209 +16,26 @@
   text-align: center;
 }
 .user-link:hover {
-  border-bottom: 3px solid #a32135;
+  border-bottom: 3px solid theme-color(danger-dark);
   text-decoration: none;
-  color: #a32135;
+  color: theme-color(danger-dark);
 }
 .user-link:selected {
-  border-bottom: 3px solid #a32135;
+  border-bottom: 3px solid theme-color(danger-dark);
   text-decoration: none;
-  color: #a32135;
-}
-.top-header {
-  display: block;
-  background-color: #f1f1eb;
-}
-.main-header .logo {
-  display: inline-block;
-  vertical-align: middle;
-}
-.main-header .main-links {
-  display: inline-block;
-  vertical-align: middle;
-}
-.main-links {
-  font-family: Neotech;
-}
-.main-link {
-  padding-right: 1.6rem;
-  padding-left: 1.6rem;
-  min-width: 108px;
-  text-align: center;
-  font-size: 20px;
-  color: #a32135;
-}
-.footer-main {
-  background-color: #f7f8f4;
-  padding: 20px 0;
-}
-.footer-title {
-  display: block;
-  font-family: lato;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100%;
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-.footer-link {
-  display: block;
-  font-family: lato;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100%;
-  color: #999;
-  margin: 10px;
-  font-size: 16px;
-}
-.footer-actions {
-  padding: 20px 0;
-}
-.footer-actions-header {
-  font-family: Neotech;
-  font-size: 26px;
-  text-align: center;
-}
-.footer-actions .col-4:first-child img {
-  display: inline-block;
-  height: 60px;
-}
-.footer-actions .col-4:nth-child(2) img {
-  display: inline-block;
-  height: 60px;
-}
-.footer-actions .col-4:last-child img {
-  display: inline-block;
-  height: 60px;
-  margin-left: -15px;
-}
-.copyright {
-  background-color: #a32135;
-  padding: 20px 0;
-  color: #fff;
-  font-family: lato;
-  font-weight: bold;
-}
-.input-holder {
-  position: relative;
-  display: block;
-}
-.news-letter {
-  display: inline-block;
-  border: 0px solid transparent;
-  height: 40px;
-  width: 250px;
-  border-radius: 10px;
-  background-image: url("/assets/img/newletterpattern.png");
-  margin: 10px 0;
-  position: relative;
-}
-.submit-newsletter {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background-image: url("/assets/img/newsletterarrow.png");
-  background-size: 110%;
-  background-repeat: no-repeat;
-  background-position: -2px -2px;
-  margin-left: -45px;
-  margin-top: -2px;
-  margin-bottom: 35px;
-  position: relative;
-  top: 13px;
-  right: -2px;
-}
-.main-link:hover {
-  text-decoration: none;
-  cursor: pointer;
-  color: #a32135;
-  border-bottom: 5px solid #a32135;
-  padding: 48px 1.6rem;
-}
-.footer-link:hover {
-  text-decoration: none;
-  color: #a32135;
+  color: theme-color(danger-dark);
 }
 .actions-menu {
   display: block;
   width: 100%;
   height: 40px;
-  background-color: #a32135;
+  background-color: theme-color(danger-dark);
   background-image: url("/assets/img/texture.png");
 }
 .user-image {
-  border: 1px solid #a32135;
+  border: 1px solid theme-color(danger-dark);
   border-radius: 300px;
   width: 200px;
-}
-
-.profile-nav {
-  position: relative;
-  font-family: "Neotech-medium";
-  padding: 33px 0;
-}
-.profile-notification-count {
-  position: absolute;
-  right: -5px;
-  top: -5px;
-  color: #fff;
-  background-color: #a32135;
-  padding: 5px 7px;
-  font-size: 12px;
-  border-radius: 300px;
-}
-.profile-nav .user-image {
-  width: 34px;
-}
-.profile-img-icon {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-}
-.profile-link {
-  display: inline-block;
-  vertical-align: middle;
-}
-.profile-user-menu {
-  display: block;
-  text-align: left;
-  position: absolute;
-  width: 100%;
-  background-color: #f7f8f4;
-  padding: 5px;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: 0px 10px 10px 1px rgba(0, 0, 0, 0.5);
-  left: 0;
-  top: 120px;
-  max-height: 0px;
-  overflow: hidden;
-  padding: 0px 5px;
-  transition: all ease 0.2s;
-}
-.profile-nav:hover .profile-user-menu {
-  max-height: 300px;
-  overflow: visible;
-  padding: 5px;
-  z-index: 2;
-}
-.profile-nav:hover .profile-user-menu:hover {
-  max-height: 300px;
-  overflow: visible;
-  padding: 5px;
-  z-index: 2;
-}
-
-.profile-user-menu-link a {
-  padding: 5px;
-  color: #a32135;
-  display: block;
-}
-.profile-user-menu-link a:hover {
-  text-decoration: none;
-  color: #d0475c;
-  background-color: #fff;
 }
 .responsive-menu,
 .mob-visible {
@@ -224,12 +45,156 @@
   max-width: 100% !important;
 }
 
+.header-area {
+  background-color: $white;
+}
+
+.header-area .nav li {
+  margin-right: 35px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .header-area .nav li {
+    margin-right: 20px;
+  }
+}
+.header-area .nav li:last-child {
+  margin-right: 0;
+}
+.header-area .nav li a {
+  color: theme-color(dark);
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+  font-family: $neotech;
+}
+.header-area .nav li a:hover {
+  color: theme-color(danger-dark);
+}
+@media only screen and (max-width: 575.98px) {
+  .site-logo {
+    margin-bottom: 10px;
+  }
+}
+.site-action .login-reg-nav li {
+  position: relative;
+}
+@media only screen and (max-width: 767.98px) {
+  .site-action .login-reg-nav li {
+    margin-right: 15px;
+  }
+}
+.site-action .login-reg-nav li:after {
+  content: "|";
+  position: absolute;
+  right: -20px;
+  top: 0;
+}
+@media only screen and (max-width: 767.98px) {
+  .site-action .login-reg-nav li:after {
+    right: -10px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .site-action .login-reg-nav li:after {
+    right: -12px;
+  }
+}
+.site-action .login-reg-nav li:last-child:after {
+  display: none;
+}
+/*=============================
+ 4.1 - Site Navigation Style
+ ==============================*/
+@media only screen and (min-width: 1200px) {
+  .main-menu {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.main-menu li {
+  position: relative;
+}
+
+.main-menu li.has-submenu .sub-menu {
+  background-color: $white;
+  padding: 20px 20px;
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  pointer-events: none;
+  margin-top: 28px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  width: 230px;
+  z-index: 9999;
+  left: 0;
+  border-top: 2px solid theme-color(danger-dark);
+}
+
+.main-menu li.has-submenu .sub-menu:before {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  height: 34px;
+  width: 100%;
+}
+
+.main-menu li.has-submenu .sub-menu li {
+  margin-right: 0;
+}
+
+.main-menu li.has-submenu .sub-menu li:first-child a {
+  padding-top: 0;
+}
+
+.main-menu li.has-submenu .sub-menu li:last-child a {
+  padding-bottom: 0;
+}
+
+.main-menu li.has-submenu .sub-menu li a {
+  color: theme-color(dark);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 8px 0;
+}
+
+.main-menu li.has-submenu .sub-menu li a:hover {
+  color: theme-color(danger-dark);
+}
+
+.main-menu li.has-submenu:hover .sub-menu {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
+.main-menu li:hover a {
+  color: theme-color(danger-dark);
+}
+
 /********************
 Responsive
 ******************/
 
 @media (max-width: 576px) and (max-width: 768px) {
-
   .footer-actions,
   .copyright {
     text-align: center;
@@ -257,19 +222,7 @@ Responsive
   .input-holder {
     margin: 0 auto;
   }
-  .top-header {
-    text-align: center !important;
-  }
-  .top-header .text-left,
-  .top-header .text-right {
-    text-align: center !important;
-  }
-  .top-header .text-right {
-    background-color: #eee;
-  }
-  .top-header .text-left a {
-    width: 49%;
-  }
+
   .main-header .text-left,
   .main-header .text-right {
     text-align: center !important;
@@ -297,7 +250,7 @@ Responsive
     text-align: center;
   }
   .user-image {
-    border: 3px solid #a32135;
+    border: 3px solid theme-color(danger-dark);
     width: 100px;
     display: inline-block;
     vertical-align: bottom;
@@ -320,7 +273,7 @@ Responsive
     top: 0;
     left: 0;
     z-index: 3;
-    background-color: #fff;
+    background-color: $white;
     transition: all ease 0.5s;
   }
   .responsive-menu .user-link {
@@ -364,7 +317,7 @@ Responsive
     border-bottom: 2px solid #ddd;
   }
   .close {
-    background-color: #a32135;
+    background-color: theme-color(danger-dark);
   }
   .action-icons {
     display: flex;
@@ -382,14 +335,15 @@ Responsive
     margin: 4px 0;
   }
   .responsive-menu .profile-data {
-    background-color: #a32135;
-    color: #fff;
+    background-color: theme-color(danger-dark);
+    color: $white;
   }
+
   .mob-copyright {
     position: absolute;
     bottom: 15px;
-    color: #fff;
-    background-color: #a32135;
+    color: $white;
+    background-color: theme-color(danger-dark);
     padding: 10px;
     margin: 0 15px;
     font-family: Neotech;
@@ -426,31 +380,7 @@ Responsive
   .close-btn-holder {
     padding: 10px 0;
     width: 20%;
-    background-color: #a32135;
-  }
-
-  .profile-holdler {
-    display: block;
-  }
-  .profile-holdler .col-md-3 {
-    display: block;
-    margin: 0 auto;
-  }
-  .profile-holdler .col-md-9 {
-    display: block;
-    margin: 0 auto;
-  }
-  .profile-holdler .user-form-col {
-    display: inline-block;
-    width: 100%;
-    margin: 10px 0px;
-    padding: 0;
-  }
-  .profile-holdler .user-form-col-full {
-    display: inline-block;
-    width: 100%;
-    margin: 10px 0px;
-    padding: 0;
+    background-color: theme-color(danger-dark);
   }
 }
 
@@ -469,7 +399,7 @@ Responsive
     top: 0;
     left: 0;
     z-index: 3;
-    background-color: #fff;
+    background-color: $white;
     transition: all ease 0.5s;
   }
   .responsive-menu .user-link {
@@ -513,7 +443,7 @@ Responsive
     border-bottom: 2px solid #ddd;
   }
   .close {
-    background-color: #a32135;
+    background-color: theme-color(danger-dark);
   }
   .action-icons {
     display: flex;
@@ -531,14 +461,14 @@ Responsive
     margin: 4px 0;
   }
   .responsive-menu .profile-data {
-    background-color: #a32135;
-    color: #fff;
+    background-color: theme-color(danger-dark);
+    color: $white;
   }
   .mob-copyright {
     position: absolute;
     bottom: 15px;
-    color: #fff;
-    background-color: #a32135;
+    color: $white;
+    background-color: theme-color(danger-dark);
     padding: 10px;
     margin: 0 15px;
     font-family: Neotech;
@@ -571,9 +501,10 @@ Responsive
   .close-btn-holder {
     padding: 10px 0;
     width: 20%;
-    background-color: #a32135;
+    background-color: theme-color(danger-dark);
   }
 }
+
 @media only screen and (orientation: portrait) {
   .responsive-menu {
     display: block;
@@ -584,7 +515,7 @@ Responsive
     top: 0;
     left: 0;
     z-index: 3;
-    background-color: #fff;
+    background-color: $white;
     transition: all ease 0.5s;
   }
   .responsive-menu .user-link {
@@ -629,7 +560,7 @@ Responsive
     border-bottom: 2px solid #ddd;
   }
   .close {
-    background-color: #a32135;
+    background-color: theme-color(danger-dark);
   }
   .action-icons {
     display: flex;
@@ -647,14 +578,14 @@ Responsive
     margin: 4px 0;
   }
   .responsive-menu .profile-data {
-    background-color: #a32135;
-    color: #fff;
+    background-color: theme-color(danger-dark);
+    color: $white;
   }
   .mob-copyright {
     position: absolute;
     bottom: 15px;
-    color: #fff;
-    background-color: #a32135;
+    color: $white;
+    background-color: theme-color(danger-dark);
     padding: 10px;
     margin: 0;
     font-family: Neotech;
@@ -687,7 +618,6 @@ Responsive
   .close-btn-holder {
     padding: 10px 0;
     width: 20%;
-    background-color: #a32135;
+    background-color: theme-color(danger-dark);
   }
 }
-

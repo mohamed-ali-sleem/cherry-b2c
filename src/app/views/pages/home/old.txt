@@ -1,0 +1,343 @@
+<!-- <swiper [navigation]="false" [slidesPerView]="4" [spaceBetween]="50">
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="gallery-fullimage d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+</swiper> -->
+<!-- offer section start -->
+<!-- <section class="offer-section my-5 clearfix">
+  <div class="container">
+    <div class="section-serialnumber">
+      <div class="row justify-content-lg-between">
+        <div class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+          <div class="serialnumber text-right" data-aos="fade-up" data-aos-delay="100">
+            <span>02</span>
+            <h4 class="mb-0">What WE Offer</h4>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-md-8 col-sm-12 col-xs-12">
+          <h2 data-aos="fade-up" data-aos-delay="100" class="mb-3">
+            Cras nec molestie felis. Sed non placerat enim
+          </h2>
+          <p class="mb-5" data-aos="fade-up" data-aos-delay="300">
+            Ut id lobortis eros, sed finibus dui. Cras eget purus lacus.
+            Suspendisse sodales massa quis turpis ultrices ultricies. Cras
+            euismod eros at vehicula sagittis. Suspendisse condimentum tortor
+            nec enim pellentesque feugiat. Fusce vulputate varius orci, eu
+            imperdiet orci dictum in. Nulla tempor urna vitae sapien iaculis,
+            auctor condimentum enim auctor
+          </p>
+          <div data-aos="fade-up" data-aos-delay="500">
+            <a href="#" class="main-btn main-btn-theme">Reserve Now!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- offer section end -->
+<!-- <swiper style="height: 700px" class="gallery-fullimage gallery_2col_carousel w-100" [navigation]="false"
+  [slidesPerView]="2" [spaceBetween]="0">
+  <ng-template swiperSlide class="d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template swiperSlide class="d-flex justify-content-end flex-column">
+    <div class="hero-bg-images">
+      <div class="bg-overlay"></div>
+      <div class="cover">
+        <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+      </div>
+    </div>
+    <div class="gallery-content">
+      <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+      <h2 class="text-white mt-1">Reserved Now & Get <span>50% Off</span></h2>
+      <div class="mt-5">
+        <a href="#" class="main-btn">Reserve Now!</a>
+      </div>
+    </div>
+  </ng-template>
+</swiper> -->
+
+
+
+<!-- <div class="page-header-area-2 gray">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="small-breadcrumb">
+          <div class="breadcrumb-link">
+            <ul>
+              <li><a href="/home">Home Page</a></li>
+              <li><a class="active" href="#">Registration</a></li>
+            </ul>
+          </div>
+          <div class="header-page">
+            <h1>Create Your Account</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- Slider Area Start -->
+<!-- <section class="position-relative">
+  <swiper effect="fade" class="main-slider-area" [navigation]="true" [slidesPerView]="1" [spaceBetween]="0"
+    (swiper)="onSwiper($event)" (slideChange)="onSlideChange()">
+    <ng-template swiperSlide class="d-flex justify-content-center flex-column">
+      <div class="hero-bg-images">
+        <div class="bg-overlay"></div>
+        <div class="cover">
+          <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+          </div>
+          <div class="col-12">
+            <h2 class="text-white mt-1">
+              Reserved Now & Get <span>50% Off</span>
+            </h2>
+          </div>
+          <div class="col-sm-3 mt-5">
+            <a href="#" class="main-btn">Reserve Now!</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="d-flex justify-content-center flex-column">
+      <div class="hero-bg-images">
+        <div class="bg-overlay"></div>
+        <div class="cover">
+          <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+          </div>
+          <div class="col-12">
+            <h2 class="text-white mt-1">
+              Reserved Now & Get <span>50% Off</span>
+            </h2>
+          </div>
+          <div class="col-sm-3 mt-5">
+            <a href="#" class="main-btn">Reserve Now!</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="d-flex justify-content-center flex-column">
+      <div class="hero-bg-images">
+        <div class="bg-overlay"></div>
+        <div class="cover">
+          <img src="/assets/img/slider/slider-2.jpg" loading="lazy" class="cover" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+          </div>
+          <div class="col-12">
+            <h2 class="text-white mt-1">
+              Reserved Now & Get <span>50% Off</span>
+            </h2>
+          </div>
+          <div class="col-sm-3 mt-5">
+            <a href="#" class="main-btn">Reserve Now!</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template swiperSlide class="d-flex justify-content-center flex-column">
+      <div class="hero-bg-images">
+        <div class="bg-overlay"></div>
+        <div class="cover">
+          <img src="/assets/img/slider/slider-1.jpg" loading="lazy" class="cover" alt="" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p class="text-white letter-spacing-2">FOR RENT %65 PER DAY</p>
+          </div>
+          <div class="col-12">
+            <h2 class="text-white mt-1">
+              Reserved Now & Get <span>50% Off</span>
+            </h2>
+          </div>
+          <div class="col-sm-3 mt-5">
+            <a href="#" class="main-btn">Reserve Now!</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </swiper>
+</section> -->
+<!-- Slider Area End -->

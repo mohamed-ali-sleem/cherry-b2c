@@ -40,6 +40,8 @@
 
 // pages
 @import './pages/home';
+@import './pages/auth';
+@import './pages/cars';
 
 // components
 @import './components/button';
@@ -48,6 +50,7 @@
 @import './components/navbar';
 @import './components/breadcrumb';
 @import './components/section';
+@import './components/footer';
 
 @import './components/responsive';
 // Plugin overrides

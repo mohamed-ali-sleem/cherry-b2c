@@ -117,5 +117,6 @@
 }
 
 .small-breadcrumb .breadcrumb-link ul li a.active {
-  color: $red;
+  color: theme-color(danger-dark);
+  font-weight: 600;
 }
