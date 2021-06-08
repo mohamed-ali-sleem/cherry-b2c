@@ -18,11 +18,133 @@
     </div>
 </div>
 
-
-
 <div class="container mb-5">
     <div class="row">
-        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="card mb-2">
+                <div class="card-header panel-expandable position-relative">
+                    <h5 class="mb-0">
+                        Brands
+                    </h5>
+                </div>
+                <div class="collapse show">
+                    <div class="card-body">
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> All Brands</span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal">
+                                    Audi
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> BMW </span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> Mercedes</span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> All Brands</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-2">
+                <div class="card-header panel-expandable position-relative">
+                    <h5 class="mb-0">
+                        Transmission
+                    </h5>
+                </div>
+                <div class="collapse show">
+                    <div class="card-body">
+                        <div class="radio mb-3">
+                            <input type="radio" id="Automatic" name="Transmission">
+                            <label for="Automatic">
+                                <span class="font-weight-normal">
+                                    Automatic
+                                </span>
+                            </label>
+                        </div>
+                        <div class="radio mb-3">
+                            <input type="radio" id="Manual" name="Transmission">
+                            <label for="Manual">
+                                <span class="font-weight-normal">
+                                    Manual
+                                </span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="card-header panel-expandable position-relative">
+                    <h5 class="mb-0">
+                        Body Type
+                    </h5>
+                </div>
+                <div class="collapse show">
+                    <div class="card-body">
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> 
+                                    Sedan
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal">
+                                    SUV 
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> 
+                                  Crossover
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> 
+                                    Luxury
+                                </span>
+                            </label>
+                        </div>
+                        <div class="checkbox mb-3">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">
+                                <span class="font-weight-normal"> 
+                                    Truck
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="col-8">
             <div class="sort-wapper px-4 py-3 mb-4">
                 <div class="sort-wapper-view">
@@ -43,7 +165,6 @@
                         <i class="fas fa-sort-amount-down-alt"></i>
                         Sort By
                     </span>
-
                     <div class="form-group mb-0 pt-0">
                         <select id="inputState" class="form-control mb-0">
                             <option>Default</option>
@@ -55,18 +176,17 @@
                         <div class="matrial-line"></div>
                     </div>
                 </div>
-
             </div>
             <div class="row">
                 <div class="col-6">
                     <div class="card mb-4">
+                        <span class="car-status"> Featured </span>
                         <img src="/assets/img/no-image.png" class="card-img-top" alt="..." />
                         <div class="card-body">
-
                             <ul class="car-specs d-flex align-items-center justify-content-between">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <h5 class="card-title">Car Name</h5>
@@ -77,7 +197,7 @@
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -88,11 +208,10 @@
                     <div class="card mb-4">
                         <img src="/assets/img/no-image.png" class="card-img-top" alt="..." />
                         <div class="card-body">
-
                             <ul class="car-specs d-flex align-items-center justify-content-between">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <h5 class="card-title">Car Name</h5>
@@ -103,7 +222,7 @@
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -114,11 +233,10 @@
                     <div class="card mb-4">
                         <img src="/assets/img/no-image.png" class="card-img-top" alt="..." />
                         <div class="card-body">
-
                             <ul class="car-specs d-flex align-items-center justify-content-between">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <h5 class="card-title">Car Name</h5>
@@ -129,7 +247,7 @@
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -140,11 +258,10 @@
                     <div class="card mb-4">
                         <img src="/assets/img/no-image.png" class="card-img-top" alt="..." />
                         <div class="card-body">
-
                             <ul class="car-specs d-flex align-items-center justify-content-between">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <h5 class="card-title">Car Name</h5>
@@ -155,36 +272,65 @@
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <!-- <div class="card mb-4">
+            <div class="card mb-4">
                 <div class="row no-gutters">
                     <div class="col-md-3">
+                        <span class="car-status"> Featured </span>
                         <img src="/assets/img/no-image2.png" height="100%" width="100%" alt="..." />
                     </div>
                     <div class="col-md-9">
-                        <div class="card-body"> 
+                        <div class="card-body">
                             <h5 class="card-title">Car Name</h5>
                             <p class="card-text text-gray-light">
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                             </p>
                             <ul class="car-specs d-flex align-items-center justify-content-between mt-3">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
+                                    view details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="row no-gutters">
+                    <div class="col-md-3">
+                        <span class="car-status"> Featured </span>
+                        <img src="/assets/img/no-image2.png" height="100%" width="100%" alt="..." />
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="card-title">Car Name</h5>
+                            <p class="card-text text-gray-light">
+                                This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.
+                            </p>
+                            <ul class="car-specs d-flex align-items-center justify-content-between mt-3">
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
+                            </ul>
+                            <hr>
+                            <div class=" d-flex align-items-center justify-content-between">
+                                <span class="car-price">$122.45</span>
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -198,21 +344,21 @@
                         <img src="/assets/img/no-image2.png" height="100%" width="100%" alt="..." />
                     </div>
                     <div class="col-md-9">
-                        <div class="card-body"> 
+                        <div class="card-body">
                             <h5 class="card-title">Car Name</h5>
                             <p class="card-text text-gray-light">
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                             </p>
                             <ul class="car-specs d-flex align-items-center justify-content-between mt-3">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -226,21 +372,21 @@
                         <img src="/assets/img/no-image2.png" height="100%" width="100%" alt="..." />
                     </div>
                     <div class="col-md-9">
-                        <div class="card-body"> 
+                        <div class="card-body">
                             <h5 class="card-title">Car Name</h5>
                             <p class="card-text text-gray-light">
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                             </p>
                             <ul class="car-specs d-flex align-items-center justify-content-between mt-3">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -254,21 +400,21 @@
                         <img src="/assets/img/no-image2.png" height="100%" width="100%" alt="..." />
                     </div>
                     <div class="col-md-9">
-                        <div class="card-body"> 
+                        <div class="card-body">
                             <h5 class="card-title">Car Name</h5>
                             <p class="card-text text-gray-light">
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                             </p>
                             <ul class="car-specs d-flex align-items-center justify-content-between mt-3">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
+                                <li><i class="flaticon-fuel-1 mr-1"></i> Diesel</li>
+                                <li><i class="flaticon-odometer-for-kilometers-and-speed-control mr-1"></i>35,000 km</li>
+                                <li><i class="flaticon-engine-4 mr-1"></i> 1800 cc</li>
                             </ul>
                             <hr>
                             <div class=" d-flex align-items-center justify-content-between">
                                 <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
+                                <button type="submit" class="main-btn sm" routerLink="/cars/details">
                                     view details
                                 </button>
                             </div>
@@ -276,34 +422,6 @@
                     </div>
                 </div>
             </div>
-            <div class="card mb-4">
-                <div class="row no-gutters">
-                    <div class="col-md-3">
-                        <img src="/assets/img/no-image2.png" height="100%" width="100%" alt="..." />
-                    </div>
-                    <div class="col-md-9">
-                        <div class="card-body"> 
-                            <h5 class="card-title">Car Name</h5>
-                            <p class="card-text text-gray-light">
-                                This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.
-                            </p>
-                            <ul class="car-specs d-flex align-items-center justify-content-between mt-3">
-                                <li><i class="fas fa-gas-pump mr-1"></i> Diesel</li>
-                                <li><i class=" fas fa-tachometer-alt mr-1"></i>35,000 km</li>
-                                <li><img src="/assets/img/engine.png" class="mr-1"> 1800 cc</li>
-                            </ul>
-                            <hr>
-                            <div class=" d-flex align-items-center justify-content-between">
-                                <span class="car-price">$122.45</span>
-                                <button type="submit" class="main-btn sm">
-                                    view details
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </div>
