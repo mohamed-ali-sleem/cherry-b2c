@@ -156,3 +156,13 @@ button.no-style {
 .btntoTop.active.btntoTop:hover:before {
   color: $white;
 }
+
+
+.btn-link {
+  color: theme-color(danger-dark);
+  &:hover {
+    color: theme-color(danger-dark);
+  }
+}
+
+ 

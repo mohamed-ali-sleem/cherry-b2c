@@ -1,7 +1,22 @@
 .form-group {
   position: relative;
-  padding-top: 1rem; 
+  padding-top: 1rem;
 }
+.form-group.creditcard {
+  background-image: url(/assets/img/icons/default-card.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 99% 85%;
+  padding-right: 2rem;
+}
+.form-group.location-input {
+  background-image: url(/assets/img/icons/map-pin.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: 99% 85%;
+  padding-right: 2rem;
+}
+
 .form-control {
   border: 0;
   border-radius: 0;
@@ -44,8 +59,16 @@
   right: 0;
   height: 1px;
   background-color: theme-color(danger-dark);
-  background-image: -o-linear-gradient(left, theme-color(danger-dark) 0%, $darkslategray 100%);
-  background: linear-gradient(to right, theme-color(danger-dark) 0%, $darkslategray 100%);
+  background-image: -o-linear-gradient(
+    left,
+    theme-color(danger-dark) 0%,
+    $darkslategray 100%
+  );
+  background: linear-gradient(
+    to right,
+    theme-color(danger-dark) 0%,
+    $darkslategray 100%
+  );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="$from", endColorstr="$to",GradientType=1 );
 }
 .matrial-line:after {
@@ -69,30 +92,28 @@ select.form-control:not([size]):not([multiple]) {
 
 .checkbox,
 .radio {
-  position: relative
+  position: relative;
 }
 
-.checkbox input[type=checkbox],
-.radio input[type=radio]{
-  display: none
+.checkbox input[type="checkbox"],
+.radio input[type="radio"] {
+  display: none;
 }
-
-
 
 .radio label {
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .radio label:before {
   content: "";
-  border: 1px solid $white-smoke;
+  border: 1px solid color(gray-lighter);
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  margin-right: .5rem
+  margin-right: 0.5rem;
 }
 
 .radio label:after {
@@ -104,40 +125,49 @@ select.form-control:not([size]):not([multiple]) {
   border-radius: 50%;
   left: 4px;
   opacity: 0;
-  transform: scale(2.5)
+  transform: scale(2.5);
 }
 
-.radio.radio-sm input~label:before {
+.radio.radio-md input ~ label:before {
+  width: 24px;
+  height: 24px;
+}
+.radio.radio-md input ~ label:after {
+  height: 18px;
+  width: 18px;
+  left: 3px;
+}
+
+.radio.radio-sm input ~ label:before {
   width: 15px;
-  height: 15px
+  height: 15px;
 }
-
-.radio.radio-sm input~label:after {
+.radio.radio-sm input ~ label:after {
   width: 9px;
   height: 9px;
-  left: 3px
+  left: 3px;
 }
 
-.radio input[type=radio]:checked~label:after {
+.radio input[type="radio"]:checked ~ label:after {
   opacity: 1;
-  transform: scale(.8);
-  transition: all .3s cubic-bezier(.35,.9,.4,.9)
+  transform: scale(0.8);
+  transition: all 0.3s cubic-bezier(0.35, 0.9, 0.4, 0.9);
 }
 
-.radio input[type=radio]:checked~ label:before {
-  border: 1px solid  theme-color(danger-dark);
+.radio input[type="radio"]:checked ~ label:before {
+  border: 1px solid theme-color(danger-dark);
 }
-.radio input[type=radio]:disabled~label {
-  color: #adb5bd
-}
-
-.radio input[type=radio]:disabled~label:before {
-  background-color: #f7f7f8!important;
-  border: 1px solid color(gray-lightest)!important
+.radio input[type="radio"]:disabled ~ label {
+  color: #adb5bd;
 }
 
-.radio input[type=radio]:disabled~label:after {
-  background-color: #bdbdbd
+.radio input[type="radio"]:disabled ~ label:before {
+  background-color: #f7f7f8 !important;
+  border: 1px solid color(gray-lightest) !important;
+}
+
+.radio input[type="radio"]:disabled ~ label:after {
+  background-color: #bdbdbd;
 }
 
 .checkbox label {
@@ -148,42 +178,29 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .checkbox label:before {
-  content: ""
+  content: "";
 }
 
-.checkbox label:after,.checkbox label:before {
+.checkbox label:after,
+.checkbox label:before {
   height: 20px;
   width: 20px;
   position: absolute;
   left: 0;
-  border-radius: .35rem;
-  border: 1px solid $white-smoke;
+  border-radius: 0.35rem;
+  border: 1px solid color(gray-lighter);
   top: 50%;
   transform: translateY(-50%);
 }
 
 .checkbox label:after {
   content: " ";
-  transition: .1s ease-in-out
+  transition: 0.1s ease-in-out;
 }
 
-.checkbox.checkbox-sm input:checked~label:after {
-  height: 4px;
-  width: 8px;
-  left: 8px;
-  top: 46%;
-  border-left-width: 1px;
-  border-bottom-width: 1px;
-}
 
-.checkbox.checkbox-sm label:after,.checkbox.checkbox-sm label:before {
-  width: 16px;
-  height: 16px;
-  left: 3px
-}
-
-.checkbox input[type=checkbox]:checked~label:after {
-  transform: rotate(-45deg ) translateY(-50%);
+.checkbox input[type="checkbox"]:checked ~ label:after {
+  transform: rotate(-45deg) translateY(-50%);
   height: 0.3rem;
   width: 0.7rem;
   border-left-color: theme-color(danger-dark);
@@ -197,44 +214,103 @@ select.form-control:not([size]):not([multiple]) {
   left: 6px;
 }
 
-.checkbox input[type=checkbox]:checked~label:before {
+.checkbox input[type="checkbox"]:checked ~ label:before {
   border: 1px solid theme-color(danger-dark);
 }
 
-.checkbox input[type=checkbox]:disabled~label {
-  color: #adb5bd
+.checkbox.checkbox-sm input[type="checkbox"]:checked ~ label:after {
+  height: 4px;
+  width: 8px;
+  left: 8px;
+  top: 46%;
+  border-left-width: 1px;
+  border-bottom-width: 1px;
 }
 
-.checkbox input[type=checkbox]:disabled~label:before {
-  background-color: $white-smoke!important;
-  box-shadow: none!important
+.checkbox.checkbox-sm label:after,
+.checkbox.checkbox-sm label:before {
+  width: 16px;
+  height: 16px;
+  left: 3px;
 }
 
-.checkbox input[type=checkbox]:disabled:checked~label:after {
-  border-color: #bdbdbd
+.checkbox input[type="checkbox"]:disabled ~ label {
+  color: #adb5bd;
 }
 
-.custom-switch input[type=checkbox]:focus:not(:checked)~.custom-control-label:before {
-  border-color: #adb5bd
+.checkbox input[type="checkbox"]:disabled ~ label:before {
+  background-color: $white-smoke !important;
+  box-shadow: none !important;
 }
 
-.custom-switch input[type=checkbox]~label:before {
+.checkbox input[type="checkbox"]:disabled:checked ~ label:after {
+  border-color: color(gray-lighter);
+}
+
+.custom-switch
+  input[type="checkbox"]:focus:not(:checked)
+  ~ .custom-control-label:before {
+  border-color: color(gray-lighter);
+}
+
+.custom-switch input[type="checkbox"] ~ label:before {
   top: 0;
   height: 1.5rem;
   border-radius: 1rem;
-  background-color: transparent
+  background-color: transparent;
 }
 
-.custom-switch input[type=checkbox]~label:after {
+.custom-switch input[type="checkbox"] ~ label:after {
   top: 2px;
   left: -2.9rem;
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 1rem;
-  transition: all .25s ease
+  transition: all 0.25s ease;
 }
 
-.custom-switch input[type=checkbox]:checked~label:after {
+.custom-switch input[type="checkbox"]:checked ~ label:after {
   left: -3.5rem;
-  background-color: #fff!important
+  background-color: #fff !important;
+}
+
+// selector
+
+.selector-border {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.selector-border input[type="checkbox"],
+.selector-border input[type="radio"] {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
+}
+
+.selector-border .selector-feature {
+  padding: 10px 1rem;
+  border: 1px solid $white;
+  transition: all 0.2s ease;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  background-color: $white;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selector-border input[type="checkbox"]:checked + .selector-feature,
+.selector-border input[type="radio"]:checked + .selector-feature {
+  color: theme-color(danger-dark);
+  border: 1px solid theme-color(danger-dark);
+  text-shadow: 0 0 0 theme-color(danger-dark);
 }

@@ -21,7 +21,7 @@ body {
   line-height: $default-line-height;
   -webkit-font-smoothing: antialiased;
   color: theme-color(dark);
-
+  background-color: $white-smoke;
 }
 h1,
 h2,
@@ -68,63 +68,123 @@ h6,
 .h6 {
   font-size: 0.9375rem;
 }
-
 // font sizes
 .fs-9 {
   font-size: 3.75rem;
-  @media (max-width: 991px) {
-    font-size: 3rem;
-  }
 }
 .fs-8 {
   font-size: 3.125rem;
-  @media (max-width: 991px) {
-    font-size: 2.5rem;
-  }
 }
 .fs-7 {
   font-size: 2.5rem;
-  @media (max-width: 991px) {
-    font-size: 2rem;
-  }
 }
 .fs-6 {
   font-size: 1.875rem;
-  @media (max-width: 991px) {
-    font-size: 1.5rem;
-  }
 }
 .fs-5 {
   font-size: 1.25rem;
-  @media (max-width: 991px) {
-    font-size: 1rem;
-  }
 }
 .fs-4 {
   font-size: 1rem;
-  @media (max-width: 991px) {
-    font-size: .875rem;
-  }
 }
 .fs-3 {
-  font-size: .875rem;
-  @media (max-width: 991px) {
-    font-size: .75rem;
-  }
+  font-size: 0.875rem;
 }
 .fs-2 {
-  font-size: .75rem;
-  @media (max-width: 991px) {
-    font-size: .625rem;
-  }
+  font-size: 0.75rem;
 }
 .fs-1 {
-  font-size: .625rem;
-  @media (max-width: 991px) {
-    font-size: .5rem;
+  font-size: 0.625rem;
+}
+
+@media (min-width: 992px) {
+  .fs-lg-9 {
+    font-size: 3.75rem;
+  }
+  .fs-lg-8 {
+    font-size: 3.125rem;
+  }
+  .fs-lg-7 {
+    font-size: 2.5rem;
+  }
+  .fs-lg-6 {
+    font-size: 1.875rem;
+  }
+  .fs-lg-5 {
+    font-size: 1.25rem;
+  }
+  .fs-lg-4 {
+    font-size: 1rem;
+  }
+  .fs-lg-3 {
+    font-size: 0.875rem;
+  }
+  .fs-lg-2 {
+    font-size: 0.75rem;
+  }
+  .fs-lg-1 {
+    font-size: 0.625rem;
   }
 }
 
+@media (min-width: 768px) {
+  .fs-md-9 {
+    font-size: 3.75rem;
+  }
+  .fs-md-8 {
+    font-size: 3.125rem;
+  }
+  .fs-md-7 {
+    font-size: 2.5rem;
+  }
+  .fs-md-6 {
+    font-size: 1.875rem;
+  }
+  .fs-md-5 {
+    font-size: 1.25rem;
+  }
+  .fs-md-4 {
+    font-size: 1rem;
+  }
+  .fs-md-3 {
+    font-size: 0.875rem;
+  }
+  .fs-md-2 {
+    font-size: 0.75rem;
+  }
+  .fs-md-1 {
+    font-size: 0.625rem;
+  }
+}
+@media (min-width: 576px) {
+  .fs-sm-9 {
+    font-size: 3.75rem;
+  }
+  .fs-sm-8 {
+    font-size: 3.125rem;
+  }
+  .fs-sm-7 {
+    font-size: 2.5rem;
+  }
+  .fs-sm-6 {
+    font-size: 1.875rem;
+  }
+  .fs-sm-5 {
+    font-size: 1.25rem;
+  }
+  .fs-sm-4 {
+    font-size: 1rem;
+  }
+  .fs-sm-3 {
+    font-size: 0.875rem;
+  }
+  .fs-sm-2 {
+    font-size: 0.75rem;
+  }
+  .fs-sm-1 {
+    font-size: 0.625rem;
+  }
+}
 
 .blockquote {
   padding: 1.25rem;
@@ -144,11 +204,10 @@ address {
 
 // Social Color
 @each $color, $value in $social-colors {
-  .text-#{$color} {
+  .social-#{$color} {
     color: social-color($color);
   }
 }
-
 
 @each $color, $value in $colors {
   .text-#{$color} {
@@ -156,11 +215,18 @@ address {
   }
 }
 
+@each $color, $value in $colors {
+  .bg-#{$color} {
+    background-color: color($color);
+  }
+}
+
+
 .font-weight-medium {
   font-weight: 600;
 }
 
-// letter spacing 
+// letter spacing
 .letter-spacing-1 {
   letter-spacing: 1px;
 }
@@ -170,4 +236,3 @@ address {
 .letter-spacing-3 {
   letter-spacing: 3px;
 }
-

@@ -1,18 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
-
-// import Swiper core and required modules
-import SwiperCore, { Navigation, A11y, EffectFade } from 'swiper/core'; // install Swiper modules
-SwiperCore.use([Navigation, A11y, EffectFade]);
-import { MapInfoWindow, MapMarker, GoogleMap } from '@angular/google-maps'
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
-  preserveWhitespaces: true,
+  selector: 'app-shipping',
+  templateUrl: './shipping.component.html',
+  styleUrls: ['./shipping.component.scss'],
 })
-export class HomeComponent implements OnInit {
+export class ShippingComponent implements OnInit {
   lat = 51.678418;
   lng = 7.809007;
   zoom = 12;
@@ -93,8 +86,7 @@ export class HomeComponent implements OnInit {
       },
     ],
   };
-
-  imageUrl = 'images/car-marker.png';
+  constructor() {}
 
   ngOnInit(): void {
     navigator.geolocation.getCurrentPosition((position) => {
@@ -103,13 +95,5 @@ export class HomeComponent implements OnInit {
         lng: position.coords.longitude,
       };
     });
-    AOS.init();
-  }
-
-  onSwiper(swiper: any) {
-    console.log(swiper);
-  }
-  onSlideChange() {
-    console.log('slide change');
   }
 }

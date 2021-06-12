@@ -43,9 +43,13 @@
 @import './pages/home';
 @import './pages/auth';
 @import './pages/cars';
+@import './pages/checkout';
+@import './pages/error';
 
 // components
 @import './components/button';
+@import './components/card';
+
 @import './components/carousel';
 @import './components/form';
 @import './components/navbar';

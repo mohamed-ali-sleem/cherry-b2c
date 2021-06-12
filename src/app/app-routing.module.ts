@@ -20,27 +20,35 @@ const routes: Routes = [
         loadChildren: () => import('./views/pages/cars/cars.module').then(m => m.CarsModule) 
       },
       { 
+        path:'checkout', 
+        loadChildren: () => import('./views/pages/checkout/checkout.module').then(m => m.CheckoutModule) 
+      },
+      { 
         path:'auth', 
         loadChildren: () => import('./views/pages/auth/auth.module').then(m => m.AuthModule) 
       },
+      { 
+        path:'profile', 
+        loadChildren: () => import('./views/pages/profile/profile.module').then(m => m.ProfileModule) 
+      },
       { path: '', redirectTo: 'home', pathMatch: 'full' }, 
       // { path: '**', redirectTo: 'dashboard', pathMatch: 'full' }
+      { 
+        path: 'error',
+        component: ErrorPageComponent,
+        data: {
+          'type': 404,
+          'title': 'Page Not Found',
+          'desc': 'Oopps!! The page you were looking for doesn\'t exist.'
+        }
+      },
+      {
+        path: 'error/:type',
+        component: ErrorPageComponent
+      },
+      { path: '**', redirectTo: 'error', pathMatch: 'full' }
     ]
-  },
-  { 
-    path: 'error',
-    component: ErrorPageComponent,
-    data: {
-      'type': 404,
-      'title': 'Page Not Found',
-      'desc': 'Oopps!! The page you were looking for doesn\'t exist.'
-    }
-  },
-  {
-    path: 'error/:type',
-    component: ErrorPageComponent
-  },
-  { path: '**', redirectTo: 'error', pathMatch: 'full' }
+  }
 ];
 
 @NgModule({

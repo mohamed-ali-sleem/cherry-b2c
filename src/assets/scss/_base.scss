@@ -58,3 +58,98 @@ iframe {
 .bg-gray {
   background-color: $white-smoke;
 }
+.step {
+  flex: 1 1 0px;
+  position: relative;
+}
+.step:first-child::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 1px;
+  background: color(gray-light);
+}
+.step-number {
+  border: 1px solid $white-smoke;
+  background: $white;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  font-size: 12px;
+  line-height: 1.5rem;
+  text-align: center;
+  z-index: 2;
+}
+.step.active .step-number {
+  background: theme-color(danger-dark);
+  color: $white;
+}
+
+.step.disabled {
+  color: color(gray-lighter);
+  .text-gray{
+    color: color(gray-lighter) !important;
+  }
+}
+
+/* world location section - start */
+.world-location .custom-btn[type=submit] {
+  width: 100%;
+  display: block;
+}
+.world-location .form-item .input-icon {
+  left: 20px;
+  right: unset;
+}
+.world-location .form-item input {
+  padding-left: 50px;
+}
+.world-location #mapBox {
+  height: 450px;
+  margin-top: 30px;
+  border-radius: 4px;
+}
+.world-location .location-content {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 250px;
+  padding: 30px;
+  font-size: 15px;
+  border-radius: 4px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.14);
+}
+.world-location .location-content h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.world-location .location-content p {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.world-location .location-content .save-btn a {
+  color: #000C21;
+}
+.world-location .location-content .save-btn a i {
+  margin-right: 5px;
+}
+.world-location .location-content .text-btn {
+  margin-top: 15px;
+}
+.world-location .location-content .text-btn span {
+  font-size: 12px;
+}
+.world-location .location-content .text-btn img {
+  max-width: 26px;
+}
+
+/* world location section - end */
